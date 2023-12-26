@@ -161,7 +161,7 @@ class App extends React.Component {
     />);
     let playButton;
 
-    // Set player controls
+
     if (this.state.timeouts.length !== 0 && this.state.currentStep !== this.state.arraySteps.length) {
       playButton = (
         <IconButton onClick={() => this.clearTimeouts()} >
@@ -211,7 +211,7 @@ class App extends React.Component {
           />
 
           <Form
-            formLabel="Array size"
+            formLabel="Array"
             values={[10, 25, 50]}
             labels={['10 items', '25 items', '50 items']}
             currentValue={this.state.barCount}

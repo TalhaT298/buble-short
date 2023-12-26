@@ -2,7 +2,7 @@ import React from 'react';
 import "./Bar.css"
 
 function Bar({ length, colorKey }) {
-  const COLOR_SET = ["grey", "orange", "green"];
+  const COLOR_SET = ["grey", "maroon", "CadetBlue"];
 
   let color = COLOR_SET[colorKey];
 

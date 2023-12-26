@@ -20,7 +20,6 @@ const bubbleSort = (array, position, arraySteps, colorSteps) => {
     colorSteps.push(colorKey.slice());
   }
 
-  // Remaining bars become green
   colorSteps[colorSteps.length - 1] = new Array(array.length).fill(2);
   return;
 }
