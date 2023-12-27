@@ -201,13 +201,23 @@ class App extends React.Component {
           <IconButton />
         </section>
 
-        <section className="controls container-small">
+        <section className="controls container-small bub">
           <Form
-            formLabel="Algorithm"
+            formLabel=""
             values={['Bubble Sort']}
             labels={['Bubble Sort']}
             currentValue={this.state.algorithm}
             onChange={this.changeAlgorithm}
+            style={{
+              // backgroundImage: 'url("https://i.ibb.co/rZd745c/Screenshot-24-removebg-preview.png")',
+              // backgroundSize: 'cover',
+              // backgroundPosition: 'center',
+              // backgroundRepeat: 'no-repeat',
+              // width: '200px', // Set width and height to adjust the image size
+              // height: '200px',
+              
+              
+            }}
           />
 
           <Form
@@ -216,6 +226,7 @@ class App extends React.Component {
             labels={['10 items', '25 items', '50 items']}
             currentValue={this.state.barCount}
             onChange={e => this.changeBarCount(e.target.value)}
+            
           />
 
           <Form
